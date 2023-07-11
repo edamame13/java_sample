@@ -32,6 +32,10 @@ public class Mutter{
         return this.id;
     }
 
+    public void setText( String text){
+        this.text = text;
+    }
+
     public void insert() {
         Repository.insert(this);
     }
@@ -46,6 +50,10 @@ public class Mutter{
     
     public void delete(){
         Repository.delete(this);
+    }
+
+    public void edit(){
+        Repository.edit(this);
     }
     
 }
